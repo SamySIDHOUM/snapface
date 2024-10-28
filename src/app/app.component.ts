@@ -39,5 +39,7 @@ export class AppComponent implements OnInit{
       new Date(),
       9
     );
+
+    this.myOtherSnap.setLocation('toto');
   }
 }
