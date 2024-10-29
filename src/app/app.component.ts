@@ -36,7 +36,7 @@ export class AppComponent implements OnInit{
         'Lorem lapsus',
         'https://cdn.pixabay.com/photo/2023/10/24/02/49/bike-8337261_1280.jpg',
         new Date(),
-        9
+        150
       )
     ];
     this.faceSnaps[1].setLocation('toto');
