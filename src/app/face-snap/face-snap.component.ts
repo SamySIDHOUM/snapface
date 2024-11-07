@@ -11,7 +11,7 @@ import { DatePipe, LowerCasePipe, NgClass, NgStyle, TitleCasePipe, UpperCasePipe
     UpperCasePipe,
     LowerCasePipe,
     TitleCasePipe,
-    DatePipe
+    DatePipe,    
   ],
   templateUrl: './face-snap.component.html',
   styleUrl: './face-snap.component.scss'

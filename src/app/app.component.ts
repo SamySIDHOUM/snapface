@@ -1,44 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { FaceSnapComponent } from './face-snap/face-snap.component';
-import { FaceSnap } from './models/face-snap';
+import { FaceSnapListComponent } from './face-snap-list/face-snap-list.component';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
-    FaceSnapComponent
+    HeaderComponent,
+    FaceSnapListComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent implements OnInit{
- 
-  faceSnaps!: FaceSnap[];
-
-  ngOnInit(): void {
-    this.faceSnaps = [
-      new FaceSnap(
-        'test',
-        'Lorem lapsus',
-        'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
-        new Date(),
-        3
-      ),
-      new FaceSnap(
-        'test 1',
-        'Lorem lapsus',
-        'https://cdn.pixabay.com/photo/2018/08/31/18/21/fantasy-3645269_1280.jpg',
-        new Date(),
-        7
-      ),
-      new FaceSnap(
-        'test toto 2',
-        'Lorem lapsus',
-        'https://cdn.pixabay.com/photo/2023/10/24/02/49/bike-8337261_1280.jpg',
-        new Date(),
-        150
-      )
-    ];
-    this.faceSnaps[1].setLocation('toto');
-  }
+export class AppComponent {
 }
